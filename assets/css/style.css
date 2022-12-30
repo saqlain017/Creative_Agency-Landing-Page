@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+    background-color: #20364b;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+a,label{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 0;
+}
+h1{
+    font-weight: 900;
+    font-size: 50px;
+    color: #fdc11f;
+}
+mark{
+    background: transparent;
+    color: white;
+}
+p{
+    color: white;
+}
+
+/* Header */
+
+nav {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.nav_menu{
+    display: flex;
+    gap: 50px;
+}
+.can_btn{
+        display: none;
+        margin: 0;
+        background: transparent;
+        color: white;
+}
+select{
+        width: 20px;
+        background: #20364b;
+        border: none;
+        color: aliceblue;
+        opacity: 50%;      
+}
+form button{
+    background: none;
+    border: none;
+    color: wheat;
+}
+nav .nav_menu a:hover{
+    text-decoration: overline 2px #fdc11f;
+}
+nav .nav_menu label:hover{
+    text-decoration: overline 2px #fdc11f;
+    
+}
+/* Home */
+#home{
+    padding-top: 100px;
+    height: 100vh;
+}
+#home form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+form input{
+    border-radius: 25px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+}
+#home form button{
+    background: #fdc11f;
+    border-radius: 25px;
+    padding: 8px;
+    color: #20364b;
+    width: 20%;
+}
+
+/* Canvas */
+.canvas{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#fdc11f,#20364b);
+}
+.canvas ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin: 0;
+    flex-direction: column;
+}
+
+@media screen and (max-width:992px) {
+    nav {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .nav_menu{
+        display: flex;
+        gap: 20px;
+    }
+    a,label{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    #home .home_page{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .canvas select{
+        background: transparent;
+        color: black;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.nav_menu{
+    display: none;
+}
+.can_btn{
+        display: block;
+        margin: 0;
+        background: transparent;
+}
+a,label{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width:576px) {
+    .canvas{
+        width: 300px !important;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .canvas{
+        width: 200px !important;
+    }
+    .canvas li{
+        display: flex;
+        flex-direction: column;
+    }
+}
